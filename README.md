@@ -4,6 +4,9 @@
 ---
 [Pull Request 1](https://github.com/ibrahemomari/todo-app/pull/1)
 
+[Pull Request 2](https://github.com/ibrahemomari/todo-app/pull/2)
+
+
 
 ---
 
