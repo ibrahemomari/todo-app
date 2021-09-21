@@ -1,11 +1,11 @@
 import { useState } from "react";
-
 const useForm = (callback) => {
   const [values, setValues] = useState({});
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     if (event) event.preventDefault();
     callback(values);
+    console.log("valllllllllllll", values);
   };
 
   const handleChange = (event) => {

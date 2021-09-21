@@ -9,6 +9,7 @@ import Pagination from "../pagination/pagination";
 import Settings from "../settings/settings";
 import { Container, Row, Col } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 const ToDo = () => {
   const context = useContext(settingContext);
 
