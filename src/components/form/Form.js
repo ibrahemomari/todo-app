@@ -2,6 +2,7 @@ import React from "react";
 import useForm from "../../hooks/form";
 import { Button, FormGroup, InputGroup, Intent } from "@blueprintjs/core";
 import "./form.css";
+
 function Form(props) {
   const { handleSubmit, handleChange } = useForm(props.addItem);
 
@@ -31,7 +32,7 @@ function Form(props) {
             required
           />
         </FormGroup>
-        <FormGroup label={"Difficulty( 1 --> 5 )"} labelFor="difficulty-input" >
+        <FormGroup label={"Difficulty( 1 --> 5 )"} labelFor="difficulty-input">
           <InputGroup
             id="difficulty-input"
             onChange={handleChange}
