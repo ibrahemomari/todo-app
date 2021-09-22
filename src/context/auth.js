@@ -53,7 +53,9 @@ export default function Auth(props) {
   };
 
   const logout = () => {
-    setLoginState(false, null, {});
+    cookie.remove('token');
+    localStorage.clear();
+    setLoginState(false, "", {});
   };
 
   const signup = async (username, password, role) => {

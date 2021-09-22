@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { settingContext } from "../../context/settings";
 import { v4 as uuid } from "uuid";
 import Header from "../header/Header";
-import Footer from "../footer/Footer"
+import Footer from "../footer/Footer";
 import Form from "../form/Form";
 import List from "../list/List";
 import Pagination from "../pagination/pagination";
@@ -20,7 +20,7 @@ const ToDo = () => {
   const [filteredList, setFilteredList] = useState([]);
 
   function addItem(item) {
-    console.log('items:',item);
+    console.log("items:", item);
     let details = {
       id: uuid(),
       complete: false,
@@ -124,8 +124,7 @@ const ToDo = () => {
           </Route>
         </Switch>
       </Router>
-      <Footer/>
-
+      <Footer />
     </>
   );
 };

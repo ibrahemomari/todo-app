@@ -1,8 +1,10 @@
-import React from "react";
+import React,{useContext} from "react";
 import { Navbar, Button, Alignment } from "@blueprintjs/core";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../context/auth";
 
 function Header(props) {
+  const { logout } = useContext(AuthContext);
   return (
     <div>
       <Navbar>
@@ -15,6 +17,9 @@ function Header(props) {
           <Navbar.Divider />
           <a href="/settings">
             <Button icon="settings" text="Settings"></Button>
+          </a>
+          <a href="/">
+          <Button style={{position:"absolute",right:"1rem"}} onClick={logout}>Logout</Button>
           </a>
         </Navbar.Group>
       </Navbar>
