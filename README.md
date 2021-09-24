@@ -24,8 +24,12 @@
 
 [Heroku deploy](https://ibrahem-todo-server.herokuapp.com)
 
+[netlify](https://ibrahem-todo.netlify.app/)
+
 ---
+
 [Backend Repo](https://github.com/ibrahemomari/todo-backend)
+
 ---
 
 Install Dependences
